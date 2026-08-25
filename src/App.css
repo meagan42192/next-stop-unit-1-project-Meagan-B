@@ -1,9 +1,297 @@
-/** Root **/
+
+/** Body **/
+body {
+    margin: 0;
+    background-color: #C1DBE833;
+    color: #43302E;
+}
+
+/** Header **/
+
+.site-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fefefe;
+    color: #43302E;
+
+    width: 100%;
+    padding: 15px 30px;
+
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header-logo img {
+    height: 40px;
+    width: auto;
+    transform: scale(2);
+    transform-origin: left center;
+}
+
+
+/** Navigation **/
+
+.navigation-header-menu {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    background-color: transparent;
+    width: auto;
+}
+
+.navigation-header-menu a {
+    text-decoration: none;
+    color: #43302E;
+    font-weight: 500;
+}
+
+.navigation-header-menu a:hover {
+    text-decoration: underline;
+}
+
+
+/** Sign Out Button **/
+
+.sign-out-btn {
+    background-color: #43302E;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}
+
+
+/** Footer **/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: #43302E;
+    width: 100%;
+    padding: 15px clamp(20px, 4vw, 30px) 20px;
+}
 
 /** Log In Page **/
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 12%;
+}
+
+.login-form {
+    background-color: #C1DBE8;
+    width: 300px;
+    padding: 35px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.25);
+}
+
+.login-form h2 {
+    font-family: "The Seasons", serif;
+    color: #43302E;
+    font-size: 2.2rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.login-input label {
+    color: #43302E;
+    margin-bottom: 5px;
+}
+
+.login-input input {
+    height: 38px;
+    padding: 0 10px;
+    border: 1px solid #777;
+    background-color: white;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+.login-btn {
+    display: block;
+    width: 80%;
+    margin: 30px auto 0;
+    padding: 10px;
+    background-color: #43302E;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-family: "The Seasons", serif;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.login-images{
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 0 25px;
+    overflow: hidden;
+}
+
 
 /** Home Page **/
+.destination-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px; 
+}
+
+.destination-card-image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+.destination-card-item {
+    list-style-type: none; 
+    padding: 0;            
+    margin: 0;
+}
+
+.homepage-quotes {
+    text-align: center;
+}
+
+.search-destinations {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px 20px;   
+}
 
 /** My Trips **/
 
 /** Packing list **/
+
+/** Destination Details **/
+
+.destination-details-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.destination-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.destination-info {
+    width: 40%;
+}
+
+.details-main-image {
+    width: 60%;
+}
+
+.details-destination-card-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.span-detail-images {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.span-detail-images img {
+    width: 24%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.plan-trip-container {
+    display: flex;
+    gap: 20px;
+}
+
+/** My Trips **/
+
+.my-trips-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.my-trips-dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.my-trips-dashboard h3 {
+    text-align: center;
+}
+
+.my-trips-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+.trip-column {
+    width: 100%;
+}
+
+.trip.column h4 {
+    text-align: center;
+}
+
+.my-trips-tabs h4 {
+    text-align: center;
+}
+
+.trip-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}

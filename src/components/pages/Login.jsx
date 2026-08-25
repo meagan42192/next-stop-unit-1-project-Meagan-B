@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 function Login(){
 
@@ -7,12 +8,15 @@ const [password, setPassword] = useState('');
 const [error, setError] = useState('');
 const [success, setSuccess] = useState('');
 
+const navigate = useNavigate();
+
 function handleSubmit(event){
     event.preventDefault();
 
-    if (email === 'meagan@testing.com' && password === '12345') {
+    if (email === 'demo' && password === 'demo') {
         setSuccess('Login Successful!');
         setError('');
+        navigate('/home', { replace: true });
     } else {
         setError('Invalid email or password');
         setSuccess();
@@ -43,11 +47,15 @@ return (
                 onChange={(event) => setPassword(event.target.value)}
                 />
             </div>
-            <button type="submit" className="login-btn">Log In</button> 
+            <button type="submit" className="login-btn">Sign In</button> 
 
                 {error && <p>{error}</p>}
                 {success && <p>{success}</p>}          
         </form>
+        <img className="login-images"
+             src="https://ik.imagekit.io/fbon0i47u/Plan%20Today%20(8).png"
+             alt="Login pictures of different destinations"
+        />
     </div>
 )}
 

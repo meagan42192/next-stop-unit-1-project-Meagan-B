@@ -1,9 +1,20 @@
-const destinationDetails = [
+const destinationData = [
     {
         id: 1,
         location: "Hawaii",
+        country: "United States",
         tripTotal: 1760,
         lengthOfStayDays: 7,
+        timeZone: "HST (UTC−10)",
+        bestTimeToVisit: "April–May & September–October",
+        about: "Hawaii is a tropical paradise known for its beautiful beaches, lush landscapes, volcanic scenery, and rich island culture. Whether you’re looking to relax by the ocean, explore scenic hiking trails, try local food, or experience an unforgettable adventure, Hawaii has something for every traveler.",
+        image: "https://ik.imagekit.io/fbon0i47u/hawaii2.jpg",
+        image2: "https://ik.imagekit.io/fbon0i47u/hawaii7.jpg",
+        image3: "https://ik.imagekit.io/fbon0i47u/hawaii6.jpg",
+        image4: "https://ik.imagekit.io/fbon0i47u/hawaii5.jpg",
+        image5: "https://ik.imagekit.io/fbon0i47u/hawaii4.avif",
+        image6: "https://ik.imagekit.io/fbon0i47u/hawaii3.jpg",
+        image7: "https://ik.imagekit.io/fbon0i47u/hawaii.png",
         flightDetails: {
             airline: "Delta",
             flightCost: 650,
@@ -38,9 +49,20 @@ const destinationDetails = [
     },
     {
         id: 2,
-        location: "Italy",
+        location: "Amalfi Coast",
+        country: "Italy",
         tripTotal: 3950,
         lengthOfStayDays: 9,
+        timeZone: "CET / CEST (UTC+1 / UTC+2)",
+        bestTimeToVisit: "May–June & September–October",
+        about: "Escape to the Amalfi Coast for breathtaking ocean views, colorful seaside towns, and classic Italian charm. Spend your days exploring picturesque villages, relaxing along the Mediterranean, enjoying fresh Italian cuisine, or taking a scenic boat ride along the coast.",
+        image: "https://ik.imagekit.io/fbon0i47u/italy.png",
+        image2: "https://ik.imagekit.io/fbon0i47u/amlfi1.jpg",
+        image3: "https://ik.imagekit.io/fbon0i47u/amalfi2.jpg",
+        image4: "https://ik.imagekit.io/fbon0i47u/amalfi3.jpg",
+        image5: "https://ik.imagekit.io/fbon0i47u/amalfi4.jpg",
+        image6: "https://ik.imagekit.io/fbon0i47u/amalfi5.jpg",
+        image7: "https://ik.imagekit.io/fbon0i47u/amalfi6.jpg",
         flightDetails: {
             airline: "United",
             flightCost: 1200,
@@ -74,9 +96,21 @@ const destinationDetails = [
         ]  
     },
     {
+        id: 3,
         location: "Paris",
+        country: "France",
         tripTotal: 3650,
         lengthOfStayDays: 7,
+        timeZone: "CET / CEST (UTC+1 / UTC+2)",
+        bestTimeToVisit: "April–May & September–October",
+        about: "Experience the magic of Paris with iconic landmarks, charming streets, and unforgettable French culture. Spend your days exploring museums, relaxing at sidewalk cafés, strolling along the Seine, or enjoying delicious pastries and classic French cuisine.",
+        image: "https://ik.imagekit.io/fbon0i47u/paris.png",
+        image2: "https://ik.imagekit.io/fbon0i47u/paris1.jpg",
+        image3: "https://ik.imagekit.io/fbon0i47u/paris2.jpg",
+        image4: "https://ik.imagekit.io/fbon0i47u/paris3.jpg",
+        image5: "https://ik.imagekit.io/fbon0i47u/paris4.jpg",
+        image6: "https://ik.imagekit.io/fbon0i47u/paris5.jpg",
+        image7: "https://ik.imagekit.io/fbon0i47u/paris6.jpg",
         flightDetails: {
             airline: "Air France",
             flightCost: 1050,
@@ -110,9 +144,21 @@ const destinationDetails = [
         ]
     },
 {
-    location: "Japan",
+    id: 4,
+    location: "Tokyo",
+    country: "Japan",
     tripTotal: 4200,
     lengthOfStayDays: 8,
+    timeZone: "JST (UTC+9)",
+    bestTimeToVisit: "March–May & October–November",
+    about: "Discover Tokyo, where modern city life meets centuries of Japanese tradition. Spend your days exploring colorful neighborhoods, visiting historic temples, trying incredible local food, or taking in the bright lights and energy of the city.",
+    image: "https://ik.imagekit.io/fbon0i47u/japan.png",
+    image2: "https://ik.imagekit.io/fbon0i47u/tokyo5.jpg",
+    image3: "https://ik.imagekit.io/fbon0i47u/tokyo.jpg",
+    image4: "https://ik.imagekit.io/fbon0i47u/tokyo1.jpg",
+    image5: "https://ik.imagekit.io/fbon0i47u/tokyo2.jpg",
+    image6: "https://ik.imagekit.io/fbon0i47u/tokyo3.jpg",
+    image7: "https://ik.imagekit.io/fbon0i47u/tokyo4.jpeg",
     flightDetails: {
         airline: "Japan Airlines",
         flightCost: 1350,
@@ -146,9 +192,21 @@ const destinationDetails = [
     ]
 },
 {
-    location: "Greece",
+    id: 5,
+    location: "Santorini",
+    country: "Greece",
     tripTotal: 3900,
     lengthOfStayDays: 7,
+    timeZone: "EET / EEST (UTC+2 / UTC+3)",
+    bestTimeToVisit: "May–June & September–October",
+    about: "Escape to Santorini for stunning ocean views, whitewashed villages, and unforgettable sunsets. Spend your days exploring charming streets, relaxing on unique beaches, enjoying fresh Greek cuisine, or taking a scenic boat ride around the island.",
+    image: "https://ik.imagekit.io/fbon0i47u/greece.png",
+    image2: "https://ik.imagekit.io/fbon0i47u/sant6.jpg",
+    image3: "https://ik.imagekit.io/fbon0i47u/sant1.jpg",
+    image4: "https://ik.imagekit.io/fbon0i47u/sant2.jpg",
+    image5: "https://ik.imagekit.io/fbon0i47u/sant3.jpg",
+    image6: "https://ik.imagekit.io/fbon0i47u/sant4.jpg",
+    image7: "https://ik.imagekit.io/fbon0i47u/sant5.jpg",
     flightDetails: {
         airline: "Delta",
         flightCost: 1250,
@@ -182,9 +240,21 @@ const destinationDetails = [
     ]
 },
 {
+    id: 6,
     location: "Banff",
+    country: "Canada",
     tripTotal: 3200,
     lengthOfStayDays: 6,
+    timeZone: "Mountain Time (UTC−7 / UTC−6)",
+    bestTimeToVisit: "June–September",
+    about: "Escape to Banff for breathtaking mountain views, turquoise lakes, and endless outdoor adventures. Spend your days hiking scenic trails, exploring Banff National Park, relaxing by the lake, or taking in the beauty of the Canadian Rockies.",
+    image: "https://ik.imagekit.io/fbon0i47u/banff.png",
+    image2: "https://ik.imagekit.io/fbon0i47u/banff6.jpg",
+    image3: "https://ik.imagekit.io/fbon0i47u/banff1.jpg",
+    image4: "https://ik.imagekit.io/fbon0i47u/banff2.jpg",
+    image5: "https://ik.imagekit.io/fbon0i47u/banff3.jpg",
+    image6: "https://ik.imagekit.io/fbon0i47u/banff4.jpg",
+    image7: "https://ik.imagekit.io/fbon0i47u/banff5.jpg",
     flightDetails: {
         airline: "Air Canada",
         flightCost: 650,
@@ -218,9 +288,21 @@ const destinationDetails = [
     ]
 },
 {
+    id: 7,
     location: "Bali",
+    country: "Indonesia",
     tripTotal: 3100,
     lengthOfStayDays: 9,
+    timeZone: "WITA (UTC+8)",
+    bestTimeToVisit: "April–October",
+    about: "Escape to Bali for tropical beaches, lush landscapes, and rich island culture. Spend your days exploring beautiful temples, relaxing by the ocean, discovering waterfalls and rice terraces, or enjoying delicious local food and unforgettable sunsets.",
+    image: "https://ik.imagekit.io/fbon0i47u/bali.png",
+    image2: "https://ik.imagekit.io/fbon0i47u/bali1.jpg",
+    image3: "https://ik.imagekit.io/fbon0i47u/bali6.jpg",
+    image4: "https://ik.imagekit.io/fbon0i47u/bali2.jpg",
+    image5: "https://ik.imagekit.io/fbon0i47u/bali3.jpg",
+    image6: "https://ik.imagekit.io/fbon0i47u/bali4.jpg",
+    image7: "https://ik.imagekit.io/fbon0i47u/bali5.jpg",
     flightDetails: {
         airline: "Singapore Airlines",
         flightCost: 1400,
@@ -254,9 +336,20 @@ const destinationDetails = [
     ]
 },
 {
+    id: 8,
     location: "New York City",
     tripTotal: 2850,
     lengthOfStayDays: 5,
+    timeZone: "Eastern Time (UTC-5 / UTC-4)",
+    bestTimeToVisit: "April - June & September - November",
+    about: "Experience the energy of New York City with iconic landmarks, vibrant neighborhoods, and endless things to see and do. Spend your days exploring Central Park, visiting world-famous museums, catching a Broadway show, or discovering incredible restaurants and shops throughout the city.",
+    image: "https://ik.imagekit.io/fbon0i47u/newYork.png",
+    image2: "https://ik.imagekit.io/fbon0i47u/newyork1.jpg",
+    image3: "https://ik.imagekit.io/fbon0i47u/newyork2.jpg",
+    image4: "https://ik.imagekit.io/fbon0i47u/newyork3.jpg",
+    image5: "https://ik.imagekit.io/fbon0i47u/ny4.jpg",
+    image6: "https://ik.imagekit.io/fbon0i47u/ny5.jpg",
+    image7: "https://ik.imagekit.io/fbon0i47u/ny6.jpg",
     flightDetails: {
         airline: "Delta",
         flightCost: 450,
@@ -290,3 +383,5 @@ const destinationDetails = [
     ]
 },
 ]
+
+export default destinationData;
