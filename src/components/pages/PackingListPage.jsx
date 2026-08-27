@@ -15,7 +15,7 @@ function PackingList({ onAddItem }) {
     setSelectedValue(event.target.value);
   };
     const handleClear = () => {
-    setSelectedValue(''); // Reset the state to clear the selection
+    setSelectedValue(''); 
   };
     const clearList = () => {
     setPackingItems([]);
@@ -36,8 +36,9 @@ function PackingList({ onAddItem }) {
     return (
         <>
         <Header />
-        <div>
-            <h2>Add an Item</h2>
+    <div className="packing-list-container">
+        <div className="add-item-container">
+            <h2 className="add-item-header">Add an Item</h2>
 
              {/* Input New Item Text Field */}
             <input className="add-item-input"
@@ -48,7 +49,7 @@ function PackingList({ onAddItem }) {
 
             {/* Category Drop Down */} 
             <select 
-            className="category-select"
+            className="add-item-input"
             value={selectedValue}
             onChange={handleChange}
             >
@@ -63,7 +64,7 @@ function PackingList({ onAddItem }) {
             </select>
 
              {/* Add Item Button */}
-            <button className="add-item-button"
+            <button id="add-item-btn" className="submit-btn"
             onClick={() => {
                 HandleAddItems();
                 setItem("");
@@ -73,27 +74,37 @@ function PackingList({ onAddItem }) {
             >
             Add Item
             </button>
+        </div>
 
             {/* Packing List */}
-            <ul>My Packing List
+            <div className="my-packing-list-container">
+                <h2>My Packing List</h2>
+            <ul className="my-packing-list-ul">
             {packingItems.map((packingItem) => (
                 <li key={packingItem.id}>
                     <label>
                         <input
+                        className="checkbox-input"
                         type="checkbox"
                         />
-                        {packingItem.name} {packingItem.category}
+                    <span className="packing-item-name">
+                        {packingItem.name}
+                    </span> 
+                    <span className="packing-item-category">
+                        {packingItem.category}
+                    </span>
                     </label>
-                    <button onClick={() => {
+                    <button id="single-delete-btn" className="submit-btn" onClick={() => {
                         handleSingleDelete(packingItem.id)
-                    }}>Delete</button>
+                    }}>X</button>
                 </li>
 ))}
+
             </ul>
-            <button className="clear-button" onClick={clearList}>
+            <button id="clear-all-btn" className="submit-btn" onClick={clearList}>
                 Clear List
             </button>
-
+            </div>
         </div>
         </>
     );

@@ -5,6 +5,7 @@ import DestinationCard from "./DestinationCard";
 import Card from '../common/Card';
 import Header from "../layout/Header";
 import { Link } from "react-router-dom";
+import ErrorPage from "./ErrorPage";
 
 const HomePage = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -19,9 +20,7 @@ const HomePage = () => {
             navigate('/destinationDetails');
         };
 
-        if (isLoading) {
-            return <LoadingPage dataName="travel" />;
-        } else if (homeError) {
+        if (homeError) {
             return (
                 <ErrorPage>
                     <p>{homeError}</p>

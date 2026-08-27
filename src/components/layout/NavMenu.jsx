@@ -9,6 +9,11 @@ return(
             </Link>
         </li>
         <li>
+            <Link className="link" to="/about">
+                    About
+            </Link>
+        </li>
+        <li>
             <Link className="link" to="/trips">
                 My Trips
             </Link>

@@ -8,6 +8,7 @@ import Footer from './components/layout/Footer';
 import DestinationDetailsPage from './components/pages/DestinationDetailsPage';
 import MyTripsPage from './components/pages/MyTripsPage';
 import AboutPage from './components/pages/AboutPage';
+import ErrorPage from './components/pages/ErrorPage';
 
 function App() {
     const [myTrips, setMyTrips] = useState([]);
@@ -22,6 +23,8 @@ function App() {
                 <Route path="/list" element={<PackingList />} />
 
                 <Route path="/about" element={<AboutPage />} />
+
+                <Route path="*" element={<ErrorPage />} />
 
 
                 <Route

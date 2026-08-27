@@ -47,7 +47,7 @@ return (
                 onChange={(event) => setPassword(event.target.value)}
                 />
             </div>
-            <button type="submit" className="login-btn">Sign In</button> 
+            <button type="submit" className="submit-btn">Sign In</button> 
 
                 {error && <p>{error}</p>}
                 {success && <p>{success}</p>}          

@@ -1,12 +1,14 @@
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import HomePage from "./HomePage";
+import Header from "../layout/Header";
 
 function AboutPage() {
 
     return (
         <main>
-            <div>                {/* Back to Home */}
+            <div>
+                <Header />
                 <Link to="/home">
                     <p>
                         <small className="back-text-wrapper">
