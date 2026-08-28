@@ -41,7 +41,7 @@ function PackingList({ onAddItem }) {
             <h2 className="add-item-header">Add an Item</h2>
 
              {/* Input New Item Text Field */}
-            <input className="add-item-input"
+            <input className="add-item"
             placeholder="Add a new item"
             value={item}
             onChange={(e) => setItem(e.target.value)}
@@ -94,7 +94,7 @@ function PackingList({ onAddItem }) {
                         {packingItem.category}
                     </span>
                     </label>
-                    <button id="single-delete-btn" className="submit-btn" onClick={() => {
+                    <button id="single-delete-btn" onClick={() => {
                         handleSingleDelete(packingItem.id)
                     }}>X</button>
                 </li>
