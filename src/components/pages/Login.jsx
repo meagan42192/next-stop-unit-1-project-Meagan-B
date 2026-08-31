@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import logo from "../../data/nextStopLogo";
 
 function Login(){
 
@@ -26,7 +27,12 @@ function handleSubmit(event){
 return (
     <div className="login-container">
         <form className="login-form" onSubmit={handleSubmit}>
-            <h2>Login</h2>
+                <img
+                    className="login-logo"
+                    src={logo}
+                    alt= "logo image"
+                />
+            <h2>Welcome back!</h2>
             <div className="login-input">
                 <label htmlFor="email">Email: </label>
 
