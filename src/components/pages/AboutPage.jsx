@@ -1,6 +1,7 @@
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Header from "../layout/Header";
+import aboutImage from "../../data/aboutData";
 
 function AboutPage() {
     return (
@@ -15,6 +16,11 @@ function AboutPage() {
 
                 <section className="about-content">
                     <h1>About Next Stop</h1>
+                    <img
+                        className="about-image"
+                        src={aboutImage}
+                        alt= "A photo of a plane in a tropical environment"
+                    />
 
                     <p>
                         Next Stop was created to make planning your next adventure
