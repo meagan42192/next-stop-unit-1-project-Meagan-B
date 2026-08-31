@@ -1,4 +1,4 @@
-import Card from '../common/Card';
+import Card from './Card';
 import destinationData from '../../data/destinationData';
 import destinationDetails from "../../data/destinationData";
 import { useNavigate } from "react-router-dom";

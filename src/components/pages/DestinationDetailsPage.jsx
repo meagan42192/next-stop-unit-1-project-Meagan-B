@@ -76,23 +76,24 @@ const DestinationDetailsPage = ({ setMyTrips }) => {
                         </h2>
 
                         <p className="details-country">
+                            <strong>Country: </strong>
                             {destination.country}
                         </p>
 
                         <div className="destination-facts">
 
                             <p className="details-info">
-                                <strong>Estimated Trip Cost</strong>
+                                <strong>Estimated Trip Cost: </strong>
                                 <span>${destination.tripTotal}</span>
                             </p>
 
                             <p className="details-info">
-                                <strong>Best Time to Visit</strong>
+                                <strong>Best Time to Visit: </strong>
                                 <span>{destination.bestTimeToVisit}</span>
                             </p>
 
                             <p className="details-info">
-                                <strong>Time Zone</strong>
+                                <strong>Time Zone: </strong>
                                 <span>{destination.timeZone}</span>
                             </p>
 

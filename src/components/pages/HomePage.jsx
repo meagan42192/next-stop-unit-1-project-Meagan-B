@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import destinationDetails from "../../data/destinationData";
-import DestinationCard from "./DestinationCard";
+import DestinationCard from "../common/DestinationCard";
 import Card from '../common/Card';
 import Header from "../layout/Header";
 import { Link } from "react-router-dom";
