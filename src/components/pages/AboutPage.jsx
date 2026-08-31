@@ -8,7 +8,7 @@ function AboutPage() {
             <Header />
 
             <main className="about-page">
-                <Link to="/home" className="about-back-link">
+                <Link to="/home" className="back-link">
                     <FaArrowLeft className="back-icon" />
                     Back to Home
                 </Link>

@@ -57,7 +57,7 @@ const DestinationDetailsPage = ({ setMyTrips }) => {
                 {/* Back to Home */}
                 <Link to="/home">
                     <p>
-                        <small className="back-text-wrapper">
+                        <small className="back-link">
                             <FaArrowLeft className="back-icon" />
                             Back to all destinations
                         </small>
