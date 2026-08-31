@@ -33,7 +33,7 @@ body {
     font-style: normal;
 }
 
-.header-logo img {
+.header-logo{
     height: 40px;
     width: auto;
     transform: scale(2);
