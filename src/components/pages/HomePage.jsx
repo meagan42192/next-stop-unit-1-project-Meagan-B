@@ -45,8 +45,8 @@ const HomePage = () => {
                 <Header />
                 <main>
                     <div className="homepage-quotes">
-                        <h2 className="homePage-header">Where will your next adventure take you?</h2>
-                        <h3 className="homePage-header-2"><small>Explore destinations and start planning your perfect trip.</small></h3>
+                        <h1 className="homePage-header">Where will your next adventure take you?</h1>
+                        <h2 className="homePage-header-2"><small>Explore destinations and start planning your perfect trip.</small></h2>
                     </div>
                     <div className="search-destinations">
                         <input

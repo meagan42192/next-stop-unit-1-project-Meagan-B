@@ -41,13 +41,13 @@ const MyTripsPage = ({ myTrips, setMyTrips }) => {
 
             <main className="my-trips-page">
 
-                <h2 className="my-trips-page-title">
+                <h1 className="my-trips-page-title">
                     My Trips
-                </h2>
+                </h1>
 
-                <h5>
+                <h2>
                     View and manage your upcoming adventures
-                </h5>
+                </h2>
 
 
                 {/* Dashboard */}
