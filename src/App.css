@@ -283,6 +283,10 @@ footer {
     gap: 20px;
 }
 
+.trip-buttons{
+    display: grid;
+}
+
 /** My Trips Page **/
 
 .my-trips-page {

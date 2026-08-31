@@ -2,8 +2,11 @@ import Header from "../layout/Header";
 import { Link, useParams } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import destinationData from "../../data/destinationData";
+import { useState } from "react";
 
 const DestinationDetailsPage = ({ setMyTrips }) => {
+    // Alert Banner for when buttons are clicked
+    const [showAlert, setShowAlert] = useState(false);
 
     // Get the destination ID from the URL
     const { id } = useParams();
@@ -31,6 +34,7 @@ const DestinationDetailsPage = ({ setMyTrips }) => {
             }
         ];
     });
+    setShowAlert(true);
 };
 
     const excursionsList = destination.excursions.map((excursion) => {
@@ -185,17 +189,27 @@ const DestinationDetailsPage = ({ setMyTrips }) => {
                     {destination.about}
                 </div>
 
+                {/*Button Banner*/}
+                {showAlert && (
+                    <div className="banner">
+                        Trip successfully added!
+                        <button className="banner-close-btn" onClick={() => setShowAlert(false)}>
+                            Close
+                        </button>
+                    </div>
+                )}
+
                 {/* Destination Buttons*/}
                     <div className="trip-buttons">
-                        <button onClick={() => handleAddTrip("upcoming")}>
+                        <button className="submit-btn" onClick={() => handleAddTrip("upcoming")}>
                             Add to Upcoming Trips
                         </button>
 
-                        <button onClick={() => handleAddTrip("past")}>
+                        <button className="submit-btn" onClick={() => handleAddTrip("past")}>
                             Add to Past Trips
                         </button>
 
-                        <button onClick={() => handleAddTrip("saved")}>
+                        <button className="submit-btn" onClick={() => handleAddTrip("saved")}>
                             Save Destination
                         </button>
 
