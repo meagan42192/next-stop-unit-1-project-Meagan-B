@@ -647,3 +647,54 @@ footer {
     padding: 6px 12px;
     cursor: pointer;
 }
+
+/** About Page **/
+
+.about-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    min-height: 70vh;
+}
+
+.about-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #43302E;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.about-back-link:hover {
+    text-decoration: underline;
+}
+
+.about-content {
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #43302E;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.about-content h2 {
+    background-color: #C1DBE8;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
