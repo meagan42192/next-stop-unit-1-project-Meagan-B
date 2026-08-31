@@ -14,7 +14,7 @@ const navigate = useNavigate();
 function handleSubmit(event){
     event.preventDefault();
 
-    if (email === 'demo' && password === 'demo') {
+    if (email === 'demo@gmail.com' && password === 'demo') {
         setSuccess('Login Successful!');
         setError('');
         navigate('/home', { replace: true });
