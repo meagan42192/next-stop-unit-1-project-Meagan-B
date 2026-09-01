@@ -2,15 +2,10 @@ import { useState } from "react";
 import categories from "../../data/packingListCatData";
 import Header from "../layout/Header";
 
-function PackingList({ onAddItem }) {
+function PackingList() {
     const [item, setItem] = useState("");
     const [selectedValue, setSelectedValue] = useState('');
     const [packingItems, setPackingItems] = useState([]);
-    const newItem = {
-        id: Math.random(),
-        name: item,
-        category: selectedValue
-};
     const handleChange = (event) => {
     setSelectedValue(event.target.value);
   };
@@ -28,6 +23,12 @@ function PackingList({ onAddItem }) {
 
 
   function HandleAddItems (){
+        const newItem = {
+        id: Date.now(),
+        name: item,
+        category: selectedValue
+    };
+
             setPackingItems([
                 ...packingItems,
                 newItem
@@ -94,7 +95,7 @@ function PackingList({ onAddItem }) {
                         {packingItem.category}
                     </span>
                     </label>
-                    <button id="single-delete-btn" onClick={() => {
+                    <button className="single-delete-btn" onClick={() => {
                         handleSingleDelete(packingItem.id)
                     }}>X</button>
                 </li>
