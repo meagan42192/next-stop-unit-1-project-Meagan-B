@@ -616,7 +616,7 @@ footer {
     font-size: 0.8rem;
 }
 
-#single-delete-btn {
+.single-delete-btn {
     background-color: transparent;
     color: #43302E;
 

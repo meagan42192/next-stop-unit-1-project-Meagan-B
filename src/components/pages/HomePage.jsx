@@ -16,10 +16,6 @@ const HomePage = () => {
     const destinationHome = ({ isLoading, home = [], homeError }) => {
         const navigate = useNavigate();
 
-        const handleGoToDestinationDetailsPage = () => {
-            navigate('/destinationDetails');
-        };
-
         if (homeError) {
             return (
                 <ErrorPage>

@@ -76,9 +76,9 @@ const DestinationDetailsPage = ({ setMyTrips }) => {
                     {/* Destination Information */}
                     <div className="destination-info">
 
-                        <h2 className="details-location-name">
+                        <h1 className="details-location-name">
                             {destination.location}
-                        </h2>
+                        </h1>
 
                         <p className="details-country">
                             <strong>Country: </strong>
