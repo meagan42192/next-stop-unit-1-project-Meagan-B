@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import destinationData from "../../data/destinationData";
 import { useState } from "react";
+import ErrorPage from "./ErrorPage";
 
 const DestinationDetailsPage = ({ setMyTrips }) => {
     // Alert Banner for when buttons are clicked
@@ -15,6 +16,10 @@ const DestinationDetailsPage = ({ setMyTrips }) => {
     const destination = destinationData.find(
         (destination) => destination.id === Number(id)
     );
+    
+        if (!destination) {
+        return <ErrorPage />;
+    }
 
         const handleAddTrip = (status) => {
         setMyTrips((currentTrips) => {
